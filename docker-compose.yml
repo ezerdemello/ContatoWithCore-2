@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  db:
+    image: mongo
+    ports: 
+      - 3001:27017 
+  contato.service:
+    image: contato.service
+    build:
+      context: .
+      dockerfile: Contato.Service/Dockerfile
+    environment:
+      - MONGO_HOST=mongodb://seguros.db:27017
+      - MONGO_DATABASE=Contatos
