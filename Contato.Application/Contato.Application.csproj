@@ -8,4 +8,8 @@
     <ProjectReference Include="..\Contato.Domain\Contato.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Canais\Queries\GetCanaisListQuery\" />
+  </ItemGroup>
+
 </Project>
